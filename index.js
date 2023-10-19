@@ -13,8 +13,7 @@ app.use(express.json());
 app.use("/", router);
 const contactEmail = nodemailer.createTransport({
   service: "gmail",
-  port: 465,
-  secure: true,
+  port: 587,
   auth: {
     user: "redolfofederico@gmail.com",
     pass: process.env.PASSWORD,
